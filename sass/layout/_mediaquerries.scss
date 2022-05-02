@@ -1,0 +1,69 @@
+
+
+//version mobile
+@mixin mobile($_mobile_min-width,$_mobile_max-width){
+    @media screen and (min-width:$_mobile_min-width) and (max-width:$_mobile_max-width){
+        
+    }
+}
+
+//version tablette
+@mixin tablet($_tablet_min-width){
+    @media screen and (min-width:$_tablet_min-width) {
+        
+        .card_restaurant{
+            width:70vw;
+        }
+    }
+}
+
+//version ordi
+@mixin desktop($_desktop_min-width){
+    @media screen and (min-width:$_desktop_min-width){
+        .container_menu {
+            display:flex;
+            justify-content: space-evenly;
+            gap:20px;
+        }
+        .titre_restaurant{
+            justify-content: space-around;
+        }
+        .contenu_carte{
+            height:450px;
+        }
+        article{
+            width:30%;
+            margin: 0;
+        }
+        h2{
+            width:100%;
+        }
+        nav ul {
+            display:flex;
+            justify-content: center;
+            & li{
+                flex-direction: row;
+                padding: 25px 10px;
+            }
+        }
+        .numero_menu{
+            left:-20px;
+        }
+
+        .choix_restaurant{
+            display:flex;
+            flex-wrap: wrap;
+            gap:20px;
+            justify-content: center;
+        }
+        .card_restaurant{
+            width:430px;
+        }
+        .container_cartes{
+            max-width: 1024px;
+            margin:0 auto;
+        }
+    }
+}
+
+

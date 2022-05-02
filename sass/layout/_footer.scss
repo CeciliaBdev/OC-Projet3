@@ -1,0 +1,23 @@
+footer{
+    background-color: #333;
+    padding:20px;
+
+    & ul{
+        list-style-type: none;
+        color:#fff;
+        line-height: 25px;
+        padding-left: 0;
+    }
+    & img{
+        height:15px;
+    }
+    & i{
+        color:#fff;
+        margin-right:10px ;
+        width:15px;
+    }
+    a{
+        text-decoration: none;
+        color:#fff;
+    }
+}

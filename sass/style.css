@@ -1,0 +1,380 @@
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  background-color: #fff;
+  opacity: 0.9;
+  -webkit-animation: hide_loader 0.5s forwards;
+          animation: hide_loader 0.5s forwards;
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+}
+
+.loader {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+  -webkit-animation: scaling 1.5s ease-in-out infinite;
+          animation: scaling 1.5s ease-in-out infinite;
+  z-index: 6;
+}
+
+@-webkit-keyframes scaling {
+  0%, 100% {
+    transform: scale(0.2);
+    background-color: #FF79DA;
+  }
+  50% {
+    transform: scale(1);
+    background-color: #9356DC;
+  }
+}
+
+@keyframes scaling {
+  0%, 100% {
+    transform: scale(0.2);
+    background-color: #FF79DA;
+  }
+  50% {
+    transform: scale(1);
+    background-color: #9356DC;
+  }
+}
+@-webkit-keyframes hide_loader {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+@keyframes hide_loader {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+.loader:nth-child(0) {
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.loader:nth-child(1) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+
+.loader:nth-child(2) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+
+.loader:nth-child(3) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.loader:nth-child(4) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+
+.loader:nth-child(5) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+
+footer {
+  background-color: #333;
+  padding: 20px;
+}
+footer ul {
+  list-style-type: none;
+  color: #fff;
+  line-height: 25px;
+  padding-left: 0;
+}
+footer img {
+  height: 15px;
+}
+footer i {
+  color: #fff;
+  margin-right: 10px;
+  width: 15px;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button {
+  display: block;
+  margin: 20px auto;
+  border-radius: 999px;
+  padding: 15px;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.9;
+}
+
+.heart_container {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  width: 50px;
+  font-size: 25px;
+}
+.heart_container .fas {
+  opacity: 0;
+}
+.heart_container .fas:hover {
+  -webkit-animation: heartcolor 0.3s forwards;
+          animation: heartcolor 0.3s forwards;
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@-webkit-keyframes heartcolor {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes heartcolor {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+}
+nav {
+  padding: 40px 10px;
+  width: 90vw;
+  margin: 0 auto;
+}
+nav ul {
+  padding-left: 0;
+  margin: 0 auto;
+  list-style-type: none;
+}
+nav li {
+  margin: 15px auto;
+  border: none;
+  border-radius: 25px;
+  padding: 25px 30px;
+  background-color: rgb(247, 245, 245);
+  box-shadow: 5px 1px 20px 1px rgba(0, 0, 0, 0.2);
+  display: flex;
+  gap: 20px;
+  width: 230px;
+}
+nav i {
+  color: rgb(114, 111, 111);
+}
+nav li:hover {
+  background-color: rgb(227, 233, 235);
+}
+nav li:hover i {
+  color: #9356DC;
+}
+
+.numero_menu {
+  border-radius: 50%;
+  padding: 3px 7px;
+  position: relative;
+  left: -38px;
+  background-color: #9356DC;
+  color: #fff;
+}
+
+.container_cartes {
+  display: flex;
+  flex-direction: column;
+}
+
+.choix_restaurant a {
+  text-decoration: none;
+  color: #000;
+}
+
+.card_restaurant {
+  position: relative;
+  width: 90vw;
+  margin: 15px auto;
+  border-radius: 15px;
+  box-shadow: 5px 1px 20px 1px rgba(0, 0, 0, 0.2);
+}
+.card_restaurant img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 180px;
+  width: 100%;
+  border-radius: 15px 15px 0 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card_content {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 50%;
+}
+
+.etiquette {
+  border: 1px solid rgb(166, 216, 203);
+  background-color: rgb(166, 216, 203);
+  color: rgb(14, 121, 92);
+  border-radius: 2px;
+  width: 70px;
+  text-align: center;
+  padding: 4px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+body {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+}
+
+h2 {
+  margin: 0;
+  padding-left: 10px;
+}
+
+header img {
+  width: 250px;
+  display: block;
+  margin: 20px auto;
+}
+
+h2 {
+  font-family: Shrikhand;
+}
+
+h3 {
+  position: relative;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  font-weight: normal;
+}
+
+h3:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 40px;
+  bottom: -10px;
+  border-bottom: 4px solid #99E2D0;
+}
+
+h4, p {
+  margin: 0;
+}
+
+h4 {
+  width: 100%;
+}
+
+.localisation {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(223, 219, 219);
+  height: 50px;
+}
+
+.explorer {
+  background: rgb(247, 245, 245);
+  padding: 50px 0;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .card_restaurant {
+    width: 70vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container_menu {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+
+  .titre_restaurant {
+    justify-content: space-around;
+  }
+
+  .contenu_carte {
+    height: 450px;
+  }
+
+  article {
+    width: 30%;
+    margin: 0;
+  }
+
+  h2 {
+    width: 100%;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    flex-direction: row;
+    padding: 25px 10px;
+  }
+
+  .numero_menu {
+    left: -20px;
+  }
+
+  .choix_restaurant {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .card_restaurant {
+    width: 430px;
+  }
+
+  .container_cartes {
+    max-width: 1024px;
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=style.css.map */

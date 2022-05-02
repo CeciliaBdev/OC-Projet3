@@ -1,0 +1,46 @@
+.container_cartes{
+    display:flex;
+    flex-direction: column;
+}
+.choix_restaurant a{
+    text-decoration: none;
+    color:#000;
+    
+}
+.card_restaurant{
+    position:relative;
+    width:90vw;
+    margin: 15px auto;
+    border-radius: 15px;
+    box-shadow: 5px 1px 20px 1px rgba(0,0,0,0.2);
+
+    & img{
+        object-fit: cover;
+        height:180px;
+        width:100%;
+        border-radius: 15px 15px 0 0;
+    }
+}
+.container{
+    display:flex;
+    justify-content: space-between;
+}
+.card_content{
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    width:50%;
+}
+.etiquette{
+    border: 1px solid rgb(166, 216, 203);
+    background-color: rgb(166, 216, 203);
+    color:rgb(14, 121, 92);
+    border-radius: 2px;
+    width:70px;
+    text-align: center;
+    padding:4px;
+    position:absolute;
+    top: 20px;
+    right:20px;
+}
