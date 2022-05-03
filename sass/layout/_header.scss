@@ -1,20 +1,15 @@
 header {
+
+    height:100px;
+    background-color:#fff;
+    width:100%;
     display:flex;
-    align-items: center;  
-    
-    & i{
-        font-size:20px;
-        margin-left:25px;
-        position:absolute;
-        cursor: pointer;
-    }
-    & a{
+    align-items:center;
+    justify-content: center;
+    & a {
+        text-decoration: none;
         color:#000;
-        outline:none;
+        margin-left:40px;
+        font-size:25px;
     }
-    & img{
-    width:250px;
-    display:block;
-    margin: 20px auto;
-    }    
 }

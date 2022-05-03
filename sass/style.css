@@ -92,6 +92,21 @@
           animation-delay: 0.8s;
 }
 
+header {
+  height: 100px;
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header a {
+  text-decoration: none;
+  color: #000;
+  margin-left: 40px;
+  font-size: 25px;
+}
+
 footer {
   background-color: #333;
   padding: 20px;
@@ -119,7 +134,7 @@ button {
   display: block;
   margin: 20px auto;
   border-radius: 999px;
-  padding: 15px 25px;
+  padding: 15px 45px;
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
   color: #fff;
   border: none;
@@ -127,6 +142,7 @@ button {
 }
 button:hover {
   opacity: 0.9;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
 .heart_container {
@@ -168,7 +184,6 @@ button:hover {
   }
 }
 nav {
-  padding: 10px;
   margin: 0 auto;
 }
 nav ul {
@@ -186,9 +201,11 @@ nav li {
   display: flex;
   gap: 20px;
   width: 230px;
+  padding-left: 0;
 }
 nav i {
   color: rgb(114, 111, 111);
+  font-size: 15px;
 }
 nav li:hover {
   background-color: #F5EDFF;
@@ -201,7 +218,7 @@ nav li:hover i {
   border-radius: 50%;
   padding: 3px 7px;
   position: relative;
-  left: -38px;
+  left: -10px;
   background-color: #9356DC;
   color: #fff;
 }
@@ -226,7 +243,7 @@ nav li:hover i {
 .card_restaurant img {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 180px;
+  height: 280px;
   width: 100%;
   border-radius: 15px 15px 0 0;
 }
@@ -274,10 +291,15 @@ h2 {
   margin-left: 30px;
 }
 
+.titre_restaurant h2 {
+  font-family: Shrikhand;
+  font-size: 22px;
+}
+
 header img {
   width: 250px;
   display: block;
-  margin: 20px auto;
+  margin: 0 auto;
 }
 
 h3 {
@@ -316,7 +338,7 @@ h4 {
 
 .explorer {
   background: rgb(247, 245, 245);
-  padding: 50px 0;
+  padding: 50px 20px;
   text-align: center;
 }
 

@@ -3,7 +3,10 @@
 //version mobile
 @mixin mobile($_mobile_min-width,$_mobile_max-width){
     @media screen and (min-width:$_mobile_min-width) and (max-width:$_mobile_max-width){
-        
+    
+
+
+
     }
 }
 
