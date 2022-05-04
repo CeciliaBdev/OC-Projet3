@@ -141,6 +141,14 @@ h4 {
   width: 100%;
 }
 
+.card_content {
+  font-size: 16px;
+}
+
+.title_restaurant {
+  font-weight: bold;
+}
+
 section {
   min-height: 1100px;
   background-color: rgb(247, 245, 245);

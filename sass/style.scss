@@ -19,7 +19,12 @@
     height:50px;
     box-shadow: inset 0px 2px 5px rgba(94, 92, 92, 0.5);
 }
-
+.choix_cartes{
+    background-color:rgb(247, 245, 245);
+}
+.choix_menu, .choix_cartes{
+    padding: 30px 0;
+}
 .explorer{
     background:rgb(247, 245, 245);
     padding:50px 20px;
