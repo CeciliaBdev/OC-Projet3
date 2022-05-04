@@ -348,6 +348,10 @@ h4 {
   }
 }
 @media screen and (min-width: 1024px) {
+  .contenu_carte, section, .contenair_menu {
+    min-height: 300px;
+  }
+
   .container_menu {
     display: flex;
     justify-content: space-evenly;
@@ -356,10 +360,6 @@ h4 {
 
   .titre_restaurant {
     justify-content: space-around;
-  }
-
-  .contenu_carte {
-    height: 450px;
   }
 
   article {

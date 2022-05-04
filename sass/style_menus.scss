@@ -6,19 +6,24 @@
 @import "./layout/mediaquerries";
 @import "./base/polices";
 
-
+section{
+    min-height:1100px;
+    background-color:rgb(247, 245, 245);
+}
 .image_restaurant img{
     object-fit: cover;
     height:250px;
     width:100vw;
 }
 .contenu_carte{
-    height:1050px;
+    min-height: 1000px;
     width:100vw;
     background-color:rgb(247, 245, 245);
     border-radius: 40px 40px 0 0;
     position:relative;
     margin-top: -60px;
+    //comble l'écart quand la taille du menu grandit
+    padding-bottom:20px;
 }
 .titre_restaurant{
     // background-color: red;

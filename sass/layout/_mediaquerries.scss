@@ -23,6 +23,9 @@
 //version ordi
 @mixin desktop($_desktop_min-width){
     @media screen and (min-width:$_desktop_min-width){
+        .contenu_carte, section, .contenair_menu{
+            min-height:300px;
+        }
         .container_menu {
             display:flex;
             justify-content: space-evenly;
@@ -30,9 +33,6 @@
         }
         .titre_restaurant{
             justify-content: space-around;
-        }
-        .contenu_carte{
-            height:450px;
         }
         article{
             width:30%;

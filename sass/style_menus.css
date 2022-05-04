@@ -141,6 +141,11 @@ h4 {
   width: 100%;
 }
 
+section {
+  min-height: 1100px;
+  background-color: rgb(247, 245, 245);
+}
+
 .image_restaurant img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -149,12 +154,13 @@ h4 {
 }
 
 .contenu_carte {
-  height: 1050px;
+  min-height: 1000px;
   width: 100vw;
   background-color: rgb(247, 245, 245);
   border-radius: 40px 40px 0 0;
   position: relative;
   margin-top: -60px;
+  padding-bottom: 20px;
 }
 
 .titre_restaurant {
@@ -300,6 +306,10 @@ article:nth-child(3) {
   }
 }
 @media screen and (min-width: 1024px) {
+  .contenu_carte, section, .contenair_menu {
+    min-height: 300px;
+  }
+
   .container_menu {
     display: flex;
     justify-content: space-evenly;
@@ -308,10 +318,6 @@ article:nth-child(3) {
 
   .titre_restaurant {
     justify-content: space-around;
-  }
-
-  .contenu_carte {
-    height: 450px;
   }
 
   article {
