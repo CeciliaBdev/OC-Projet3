@@ -4,9 +4,6 @@
 @mixin mobile($_mobile_min-width,$_mobile_max-width){
     @media screen and (min-width:$_mobile_min-width) and (max-width:$_mobile_max-width){
     
-
-
-
     }
 }
 
@@ -46,7 +43,7 @@
             gap:60px;
             & li{
                 flex-direction: row;
-                padding: 25px 10px;
+                padding: 25px 40px 25px 0px;
             }
         }
         .numero_menu{
