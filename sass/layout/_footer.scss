@@ -8,6 +8,12 @@ footer{
         line-height: 25px;
         padding-left: 0;
     }
+    & li{
+        cursor: pointer;
+        &:hover{
+            transform:scale(1.01);
+        }
+    }
     & img{
         height:15px;
     }

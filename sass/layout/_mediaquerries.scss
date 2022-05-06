@@ -1,9 +1,12 @@
 
 
 //version mobile
-@mixin mobile($_mobile_min-width,$_mobile_max-width){
-    @media screen and (min-width:$_mobile_min-width) and (max-width:$_mobile_max-width){
-    
+@mixin mobile($_mobile_min-width){
+    @media screen and (max-width:$_mobile_min-width){
+        nav li{
+            width: 260px;
+        }
+        
     }
 }
 
@@ -14,6 +17,8 @@
         .card_restaurant{
             width:70vw;
         }
+        
+        
     }
 }
 
@@ -60,7 +65,7 @@
             width:430px;
         }
         .container_cartes{
-            max-width: 1024px;
+            max-width: 950px;
             margin:0 auto;
         }
     }
