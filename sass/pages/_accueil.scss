@@ -6,7 +6,7 @@
 @import "../layout/mediaquerries";
 
 
-
+//--bloc localisation ville --//
 .localisation{
     display:flex;
     gap:10px;
@@ -22,6 +22,7 @@
 .choix_menu, .choix_cartes{
     padding: 30px 0;
 }
+//-- presentation site --//
 .explorer{
     background:rgb(247, 245, 245);
     padding:50px 20px;

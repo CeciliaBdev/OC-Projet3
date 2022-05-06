@@ -11,7 +11,8 @@ footer{
         
     }
     & li{
-        
+        //-- les liens grossissent légérement au survol
+        //-- pour bien les distinguer 
         cursor: pointer;
         &:hover{
             transform:scale(1.01);
