@@ -258,6 +258,15 @@ nav li:hover i {
     max-width: 950px;
     margin: 0 auto;
   }
+
+  footer img {
+    width: 100%;
+  }
+  footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
 }
 button {
   display: block;
@@ -472,6 +481,15 @@ article:nth-child(3) {
   .container_cartes {
     max-width: 950px;
     margin: 0 auto;
+  }
+
+  footer img {
+    width: 100%;
+  }
+  footer ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
   }
 }
 header {
