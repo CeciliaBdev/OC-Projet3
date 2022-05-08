@@ -1,8 +1,6 @@
 @import "../components/buttons";
-@import "../layout/mediaquerries";
 
 section{
-    // min-height:1100px;
     background-color:rgb(247, 245, 245);
 }
 .image_restaurant img{
@@ -64,6 +62,23 @@ article:nth-child(3){
       opacity:1;
     }
   }
+
+  @media screen and (min-width:$_desktop_min-width){
+    .contenu_carte, section, .contenair_menu{
+        min-height:300px;
+    }
+    .container_menu {
+        display:flex;
+        justify-content: space-evenly;
+        gap:20px;
+    }
+    .titre_restaurant{
+        justify-content: space-around;
+    }
+    article{
+        width:30%;
+    }
+}
 
 .menu{
     //background-color: blue;
@@ -141,10 +156,6 @@ article:nth-child(3){
     }
 }
 
-//responsive
-@include tablet($_tablet_min-width);
-@include mobile($_mobile_min-width);
-@include desktop($_desktop_min-width);
 
 
 

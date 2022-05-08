@@ -10,6 +10,9 @@
 .card_restaurant{
     position:relative;
     width:90vw;
+    @media screen and (min-width:$_tablet_min-width) {
+            width:70vw;
+    }
     margin: 15px auto;
     border-radius: 15px;
     box-shadow: 5px 1px 20px 1px rgba(0,0,0,0.2);
@@ -21,6 +24,24 @@
         border-radius: 15px 15px 0 0;
     }
 }
+
+@media screen and (min-width:$_desktop_min-width){
+
+    .choix_restaurant{
+        display:flex;
+        flex-wrap: wrap;
+        gap:20px;
+        justify-content: center;
+    }
+    .card_restaurant{
+        width:430px;
+    }
+    .container_cartes{
+        max-width: 950px;
+        margin:0 auto;
+    }
+}
+
 .container{
     display:flex;
     justify-content: space-between;

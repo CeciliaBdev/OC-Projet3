@@ -1,5 +1,4 @@
 nav{
-
     margin:0 auto;
     & ul{
         padding-left: 0;
@@ -17,7 +16,10 @@ nav{
         gap:20px;
         width:290px;
         padding-left:0;
-        
+        @media screen and (max-width:$_mobile_min-width) 
+            {
+                width: 260px;
+            }    
     }
     & i{
         color:rgb(114, 111, 111);
@@ -29,6 +31,16 @@ nav{
             color:$color-primary;
         }
         
+    }
+}
+@media screen and (min-width:$_desktop_min-width){
+    nav ul {
+        display:flex;
+        gap:60px;
+        & li{
+            flex-direction: row;
+            padding: 25px 40px 25px 0px;
+        }
     }
 }
 .numero_menu{

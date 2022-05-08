@@ -3,7 +3,6 @@
 @import "../components/buttons";
 @import "../layout/nav_menus";
 @import "../layout/choix_restau";
-@import "../layout/mediaquerries";
 
 
 //--bloc localisation ville --//
@@ -29,11 +28,6 @@
     text-align: center;
 }
 
-
-// test responsive
-@include tablet($_tablet_min-width);
-@include mobile($_mobile_min-width);
-@include desktop($_desktop_min-width);
 
 
     
