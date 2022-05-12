@@ -66,7 +66,7 @@
   animation-delay: 1s;
 }
 
-button {
+button, .explorer a {
   display: block;
   margin: 20px auto;
   border-radius: 999px;
@@ -75,15 +75,19 @@ button {
   color: #fff;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
-button:hover {
+button:hover, .explorer a:hover {
   opacity: 0.8;
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease-in-out;
 }
-button a {
-  text-decoration: none;
+button a, .explorer a a {
   color: #fff;
+}
+
+.explorer a {
+  display: inline-block;
 }
 
 nav {
@@ -237,7 +241,7 @@ nav li:hover i {
   text-align: center;
 }
 
-button {
+button, .explorer a {
   display: block;
   margin: 20px auto;
   border-radius: 999px;
@@ -246,15 +250,19 @@ button {
   color: #fff;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
-button:hover {
+button:hover, .explorer a:hover {
   opacity: 0.8;
   box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.5);
   transition: all 0.3s ease-in-out;
 }
-button a {
-  text-decoration: none;
+button a, .explorer a a {
   color: #fff;
+}
+
+.explorer a {
+  display: inline-block;
 }
 
 section {
